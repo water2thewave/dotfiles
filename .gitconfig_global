@@ -3,7 +3,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg1
+	program = gpg
 
 [includeIf "gitdir:/mnt/c/code/kiri/"]
 	path = ~/.gitconfig-kiri

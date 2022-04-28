@@ -42,7 +42,7 @@ set -o vi
 # Exports #
 ###########
 export GPG_TTY=$(tty)
-export TERM=xterm-256color
+#export TERM=xterm-256color
 export EDITOR=vim
 
 # Source alias file if it exists
