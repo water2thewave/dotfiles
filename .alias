@@ -1,0 +1,12 @@
+###########
+# Aliases #
+###########
+
+# use `dgit` instead of git to do gitconfig on dotfiles
+# eg "dgit status"
+alias dgit='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+alias dc=docker-compose
+which exa >/dev/null && alias ls='exa'
+
+

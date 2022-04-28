@@ -1,0 +1,12 @@
+[core]
+	excludesFile = ~/.gitignore_global
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg1
+
+[includeIf "gitdir:/mnt/c/code/kiri/"]
+	path = ~/.gitconfig-kiri
+[user]
+	email = kiri
+	name = kiri
