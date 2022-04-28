@@ -16,7 +16,9 @@ Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'edkolev/promptline.vim'
 Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown' " Must come after 'tabular'
 Plug 'isobit/vim-caddyfile'
+Plug 'junegunn/vim-easy-align'
 Plug 'leafOfTree/vim-svelte-plugin'
 Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -68,6 +70,7 @@ set smarttab
 
 " Set word wrap for certain files like Markdown
 au FileType markdown,text setlocal textwidth=80
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 
 " ==================
@@ -102,6 +105,9 @@ let g:airline#extensions#tabline#enabled = 1
 
 let g:airline_theme='base16_eighties'
 let g:airline_powerline_fonts = 1
+
+" If blue lines are in the number lines on the left, enable termguicolors
+set termguicolors
 
 " Use base16-shell colors
 colorscheme base16-eighties
@@ -211,4 +217,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 " Easy Motion Navigation
+
+map <Leader> <Plug>(easymotion-prefix)
 nmap f <Plug>(easymotion-prefix)
