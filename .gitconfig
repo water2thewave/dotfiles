@@ -12,3 +12,8 @@
 	email = kiri
 	name = kiri
 	signingkey = CFF93564D1D07E9EB288777B01DE8FF0477931D3
+[pull]
+	ff = false
+	rebase = true
+[init]
+	defaultBranch = main

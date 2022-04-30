@@ -42,7 +42,7 @@ set -o vi
 # Exports #
 ###########
 export GPG_TTY=$(tty)
-#export TERM=xterm-256color
+export TERM=xterm-256color
 export EDITOR=vim
 
 # Source alias file if it exists
@@ -64,4 +64,4 @@ export GPG_TTY=$(tty)
 
 command -v starship >/dev/null && eval "$(starship init zsh)"
 
-
+export BW_SESSION="wErB0tkp6/CIj2VpAoyr20BaCWjy1nxtiASrimXx5eAG+iluQ/q2YPdFI84aFQ6UtMgpsuESySBbOYM6p0c/vA=="

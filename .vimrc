@@ -217,6 +217,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 " Easy Motion Navigation
+" Use 'fb' or ',b' to navigate back-words
 
 map <Leader> <Plug>(easymotion-prefix)
 nmap f <Plug>(easymotion-prefix)
